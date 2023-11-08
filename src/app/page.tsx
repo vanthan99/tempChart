@@ -5,22 +5,22 @@ import * as React from 'react';
 export default function Home() {
   const _estpData: Array<IItemChart> = [
     {
-      leftPercent: 60.55,
+      leftPercent: 62,
       leftText: "extravertion",
       rightText: "introvertion"
     },
     {
-      leftPercent: 70.67,
+      leftPercent: 73,
       leftText: "sensing",
       rightText: "intuition"
     },
     {
-      leftPercent: 65.12,
+      leftPercent: 69,
       leftText: "thinking",
       rightText: "feeling"
     },
     {
-      leftPercent: 30.23,
+      leftPercent: 31,
       leftText: "judgment",
       rightText: "perception"
     },
@@ -28,22 +28,22 @@ export default function Home() {
 
   const _estjData: Array<IItemChart> = [
     {
-      leftPercent: 70.43,
+      leftPercent: 77,
       leftText: "extravertion",
       rightText: "introvertion"
     },
     {
-      leftPercent: 68.12,
+      leftPercent: 67,
       leftText: "sensing",
       rightText: "intuition"
     },
     {
-      leftPercent: 69.21,
+      leftPercent: 61,
       leftText: "thinking",
       rightText: "feeling"
     },
     {
-      leftPercent: 57.19,
+      leftPercent: 55,
       leftText: "judgment",
       rightText: "perception"
     },
@@ -51,110 +51,110 @@ export default function Home() {
 
   const INTJ: Array<IItemChart> = [
     {
-      leftPercent: 25.79,
+      leftPercent: 25,
       leftText: "extravertion",
       rightText: "introvertion"
     },
     {
-      leftPercent: 40.04,
+      leftPercent: 41,
       leftText: "sensing",
       rightText: "intuition"
     },
     {
-      leftPercent: 69.43,
+      leftPercent: 69,
       leftText: "thinking",
       rightText: "feeling"
     },
     {
-      leftPercent: 77.53,
+      leftPercent: 79,
       leftText: "judgment",
       rightText: "perception"
     },
   ]
   const ENTJ: Array<IItemChart> = [
     {
-      leftPercent: 79.55,
+      leftPercent: 76,
       leftText: "extravertion",
       rightText: "introvertion"
     },
     {
-      leftPercent: 23.32,
+      leftPercent: 23,
       leftText: "sensing",
       rightText: "intuition"
     },
     {
-      leftPercent: 77.34,
+      leftPercent: 72,
       leftText: "thinking",
       rightText: "feeling"
     },
     {
-      leftPercent: 60.87,
+      leftPercent: 61,
       leftText: "judgment",
       rightText: "perception"
     },
   ]
   const INTP: Array<IItemChart> = [
     {
-      leftPercent: 27.12,
+      leftPercent: 27,
       leftText: "extravertion",
       rightText: "introvertion"
     },
     {
-      leftPercent: 30.57,
+      leftPercent: 32,
       leftText: "sensing",
       rightText: "intuition"
     },
     {
-      leftPercent: 78.32,
+      leftPercent: 78,
       leftText: "thinking",
       rightText: "feeling"
     },
     {
-      leftPercent: 40.69,
+      leftPercent: 39,
       leftText: "judgment",
       rightText: "perception"
     },
   ]
   const ISTP: Array<IItemChart> = [
     {
-      leftPercent: 40.82,
+      leftPercent: 40,
       leftText: "extravertion",
       rightText: "introvertion"
     },
     {
-      leftPercent: 67.12,
+      leftPercent: 67,
       leftText: "sensing",
       rightText: "intuition"
     },
     {
-      leftPercent: 79.21,
+      leftPercent: 79,
       leftText: "thinking",
       rightText: "feeling"
     },
     {
-      leftPercent: 27.56,
+      leftPercent: 27,
       leftText: "judgment",
       rightText: "perception"
     },
   ]
   const ESFP: Array<IItemChart> = [
     {
-      leftPercent: 60.12,
+      leftPercent: 63,
       leftText: "extravertion",
       rightText: "introvertion"
     },
     {
-      leftPercent: 70.09,
+      leftPercent: 73,
       leftText: "sensing",
       rightText: "intuition"
     },
     {
-      leftPercent: 30.25,
+      leftPercent: 29,
       leftText: "thinking",
       rightText: "feeling"
     },
     {
-      leftPercent: 20.8,
+      leftPercent: 21,
       leftText: "judgment",
       rightText: "perception"
     },
@@ -162,22 +162,22 @@ export default function Home() {
 
   const INFJ: Array<IItemChart> = [
     {
-      leftPercent: 30.78,
+      leftPercent: 31,
       leftText: "extravertion",
       rightText: "introvertion"
     },
     {
-      leftPercent: 42.53,
+      leftPercent: 42,
       leftText: "sensing",
       rightText: "intuition"
     },
     {
-      leftPercent: 25.48,
+      leftPercent: 25,
       leftText: "thinking",
       rightText: "feeling"
     },
     {
-      leftPercent: 69.12,
+      leftPercent: 69,
       leftText: "judgment",
       rightText: "perception"
     },
