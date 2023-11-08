@@ -51,7 +51,7 @@ body button,input,optgroup,select,textarea {
   align-items: center;
   text-transform: uppercase;
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .left{
@@ -79,7 +79,7 @@ body button,input,optgroup,select,textarea {
   text-transform: uppercase;
   max-width: -webkit-fill-available;
   color: #685d5d;
-  font-weight: 800;
+  font-weight: 600;
 
   position: absolute;
   z-index: 20;

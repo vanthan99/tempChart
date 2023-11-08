@@ -30,9 +30,16 @@ const ItemChart: React.FC<IItemChart> = (iItemChart: IItemChart) => {
     }
 
     const percentRightStyle: React.CSSProperties = {
-        width: `${100 - value}%`
+        width: `${formatNumber(100 - value)}%`
     }
 
+    function formatNumber(number: number): string {
+        if (Number.isInteger(number)) {
+          return number.toString();
+        } else {
+          return number.toFixed(2);
+        }
+      }
 
     return (
         <>
@@ -58,7 +65,7 @@ const ItemChart: React.FC<IItemChart> = (iItemChart: IItemChart) => {
                 </div>
                 <div className="right" style={percentRightStyle}>
                     <div className="content">
-                        <div className="percent">{100 - value}%</div>
+                        <div className="percent">{formatNumber(100 - value)}%</div>
                         <input type="text" defaultValue={rightText} />
                     </div>
                 </div>
