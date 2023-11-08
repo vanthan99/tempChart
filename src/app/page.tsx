@@ -1,95 +1,253 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+'use client'
 
+import ItemChart, { IItemChart } from "./ItemChart";
+import * as React from 'react';
 export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+  const _estpData: Array<IItemChart> = [
+    {
+      leftPercent: 70,
+      leftText: "extravertion",
+      rightText: "introvertion"
+    },
+    {
+      leftPercent: 70,
+      leftText: "sensing",
+      rightText: "intuition"
+    },
+    {
+      leftPercent: 40,
+      leftText: "thinking",
+      rightText: "feeling"
+    },
+    {
+      leftPercent: 35,
+      leftText: "judgment",
+      rightText: "perception"
+    },
+  ]
+
+  const _estjData: Array<IItemChart> = [
+    {
+      leftPercent: 70,
+      leftText: "extravertion",
+      rightText: "introvertion"
+    },
+    {
+      leftPercent: 70,
+      leftText: "sensing",
+      rightText: "intuition"
+    },
+    {
+      leftPercent: 40,
+      leftText: "thinking",
+      rightText: "feeling"
+    },
+    {
+      leftPercent: 60,
+      leftText: "judgment",
+      rightText: "perception"
+    },
+  ]
+
+  const INTJ: Array<IItemChart> = [
+    {
+      leftPercent: 25,
+      leftText: "extravertion",
+      rightText: "introvertion"
+    },
+    {
+      leftPercent: 70,
+      leftText: "sensing",
+      rightText: "intuition"
+    },
+    {
+      leftPercent: 60,
+      leftText: "thinking",
+      rightText: "feeling"
+    },
+    {
+      leftPercent: 75,
+      leftText: "judgment",
+      rightText: "perception"
+    },
+  ]
+  const ENTJ: Array<IItemChart> = [
+    {
+      leftPercent: 20,
+      leftText: "extravertion",
+      rightText: "introvertion"
+    },
+    {
+      leftPercent: 70,
+      leftText: "sensing",
+      rightText: "intuition"
+    },
+    {
+      leftPercent: 30,
+      leftText: "thinking",
+      rightText: "feeling"
+    },
+    {
+      leftPercent: 80,
+      leftText: "judgment",
+      rightText: "perception"
+    },
+  ]
+  const INTP: Array<IItemChart> = [
+    {
+      leftPercent: 20,
+      leftText: "extravertion",
+      rightText: "introvertion"
+    },
+    {
+      leftPercent: 70,
+      leftText: "sensing",
+      rightText: "intuition"
+    },
+    {
+      leftPercent: 30,
+      leftText: "thinking",
+      rightText: "feeling"
+    },
+    {
+      leftPercent: 80,
+      leftText: "judgment",
+      rightText: "perception"
+    },
+  ]
+  const ISTP: Array<IItemChart> = [
+    {
+      leftPercent: 20,
+      leftText: "extravertion",
+      rightText: "introvertion"
+    },
+    {
+      leftPercent: 70,
+      leftText: "sensing",
+      rightText: "intuition"
+    },
+    {
+      leftPercent: 30,
+      leftText: "thinking",
+      rightText: "feeling"
+    },
+    {
+      leftPercent: 80,
+      leftText: "judgment",
+      rightText: "perception"
+    },
+  ]
+  const ESFP: Array<IItemChart> = [
+    {
+      leftPercent: 20,
+      leftText: "extravertion",
+      rightText: "introvertion"
+    },
+    {
+      leftPercent: 70,
+      leftText: "sensing",
+      rightText: "intuition"
+    },
+    {
+      leftPercent: 30,
+      leftText: "thinking",
+      rightText: "feeling"
+    },
+    {
+      leftPercent: 80,
+      leftText: "judgment",
+      rightText: "perception"
+    },
+  ]
+
+  function generateRandomKey() {
+    return Math.random().toString(36).substring(7);
+  }
+
+  const renderItem = (estpData: Array<IItemChart>) => {
+    if (estpData.length > 0) {
+      return estpData.map((item) => {
+        return <div key={generateRandomKey()} className="row">
+          <div className="col-12 d-flex justify-content-center">
+            <ItemChart {...item} />
+          </div>
         </div>
+      })
+    }
+  }
+  return (
+    <>
+      <div className="container mt-4">
+        <div className="row">
+          <div className="col-12 d-flex justify-content-center">
+            <small className="text-muted">ESTP</small>
+          </div>
+        </div>
+        {renderItem(_estpData)}
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="container mt-4">
+        <div className="row">
+          <div className="col-12 d-flex justify-content-center">
+            <small className="text-muted">ESTJ</small>
+          </div>
+        </div>
+        {renderItem(_estjData)}
       </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="container mt-4">
+        <div className="row">
+          <div className="col-12 d-flex justify-content-center">
+            <small className="text-muted">ESTJ</small>
+          </div>
+        </div>
+        {renderItem(_estjData)}
       </div>
-    </main>
+
+      <div className="container mt-4">
+        <div className="row">
+          <div className="col-12 d-flex justify-content-center">
+            <small className="text-muted">INTJ</small>
+          </div>
+        </div>
+        {renderItem(INTJ)}
+      </div>
+
+      <div className="container mt-4">
+        <div className="row">
+          <div className="col-12 d-flex justify-content-center">
+            <small className="text-muted">ENTJ</small>
+          </div>
+        </div>
+        {renderItem(ENTJ)}
+      </div>
+
+      <div className="container mt-4">
+        <div className="row">
+          <div className="col-12 d-flex justify-content-center">
+            <small className="text-muted">INTP</small>
+          </div>
+        </div>
+        {renderItem(INTP)}
+      </div>
+
+      <div className="container mt-4">
+        <div className="row">
+          <div className="col-12 d-flex justify-content-center">
+            <small className="text-muted">ISTP</small>
+          </div>
+        </div>
+        {renderItem(ISTP)}
+      </div>
+      <div className="container mt-4">
+        <div className="row">
+          <div className="col-12 d-flex justify-content-center">
+            <small className="text-muted">ESFP</small>
+          </div>
+        </div>
+        {renderItem(ESFP)}
+      </div>
+      <hr className="hr mb-3" />
+    </>
   )
 }
