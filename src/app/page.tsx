@@ -154,7 +154,7 @@ export default function Home() {
       rightText: "feeling"
     },
     {
-      leftPercent: 21,
+      leftPercent: 25,
       leftText: "judgment",
       rightText: "perception"
     },
